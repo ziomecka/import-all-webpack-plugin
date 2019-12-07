@@ -16,5 +16,8 @@
     "import"
   ],
   "author": "Katarzyna Ziomek-Zdanowicz",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/ziomecka/import-all-webpack-plugin"
+  }
 }
