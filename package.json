@@ -1,14 +1,20 @@
 {
   "name": "import-all-webpack-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "dependencies": {},
   "devDependencies": {
+    "@babel/cli": "7.7.5",
+    "@babel/core": "7.7.5",
+    "@babel/plugin-proposal-class-properties": "7.7.4",
+    "@babel/plugin-transform-arrow-functions": "7.7.4",
+    "@babel/preset-env": "7.7.5",
     "eslint": "6.7.2"
   },
   "scripts": {
-    "lint": "eslint -c ./eslint.config.js ./"
+    "lint": "eslint -c ./eslint.config.js ./",
+    "babel": "babel ./src --config-file ./babel.config.js --out-dir ./lib"
   },
   "keywords": [
     "webpack",
