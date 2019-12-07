@@ -10,11 +10,11 @@ module.exports = class ImportAllPlugin {
     this.exclude = exclude;
   }
 
-  verify() {
+  verify = () => {
     return Array.isArray(this.exclude)
       ? !this.exclude.includes
       : value => !new RegExp(this.exclude, 'gi').test(value);
-  }
+  };
 
   apply(compiler) {
     const dirContent = fs.readdirSync(this.dirPath);
